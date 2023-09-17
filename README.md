@@ -14,4 +14,25 @@ First attempt at Flask task manager
 ## Setup environment variables
 - import os (the add 6 blank env variables - os.environ.setdefault("",""))
 - assign the values required to the variables (IP, PORT, SECRET_KEY, DEBUG, DEVELOPMENT, DB_URL)
-- 
+- Push to github
+
+## Create python package 'taskmanager'
+- Run cmd: mkdir taskmanager
+- Inside 'taskmanager' 
+- Run cmd: touch __init__.py
+- Setup __init__.py
+- Push to github
+
+## Setup routes.py
+- from flask import render_template
+- from taskmanager import app, db
+- create first route "/" and for now return base.html template
+
+## Create run.py
+- In project root directory create run.py
+- Add file data
+
+## Create templates (in taskmanager app)
+- Create base.html
+- Test app by running run.py (python run.py)
+- Push to github
