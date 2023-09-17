@@ -10,3 +10,8 @@ First attempt at Flask task manager
 - Run cmd (to ignore pushing ceratin files to github): touch .gitgnore
 - Add env.py to .gitgnore
 - Push to github
+
+## Setup environment variables
+- import os (the add 6 blank env variables - os.environ.setdefault("",""))
+- assign the values required to the variables (IP, PORT, SECRET_KEY, DEBUG, DEVELOPMENT, DB_URL)
+- 
