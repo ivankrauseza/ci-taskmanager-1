@@ -36,3 +36,8 @@ First attempt at Flask task manager
 - Create base.html
 - Test app by running run.py (python run.py)
 - Push to github
+
+## Create database schema
+- Create models.py within taskmanager app
+- Create Tables and Columns
+- Push to github
