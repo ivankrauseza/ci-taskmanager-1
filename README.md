@@ -41,3 +41,25 @@ First attempt at Flask task manager
 - Create models.py within taskmanager app
 - Create Tables and Columns
 - Push to github
+- Import models to routes.py
+- Create 'taskmanager' database from CLI 
+- > psql -U postgres (enter postgres password)
+- > postgres=# CREATE DATABASE taskmanager;
+- Connect to that database
+- > \c taskmanager;
+- Exit psql with \q
+- Use Python to generate and migrate tables
+- > python
+- > from taskmanager import db
+- > db.create_all()
+- Check that tables were created:
+- > psql -U postgres (Enter password)
+- > \c taskmanager (choose taskmanager database)
+- > \dt (display tables)
+- Push to github
+
+## BUGS
+### psql not added to PATH
+- FIXED: Follow this tutorial [link](https://bobbyhadz.com/blog/psql-is-not-recognized-as-internal-or-external-command)
+- FIXED: Sign in requires 'postgres' as username (psql -U postgres)
+- FIXED: 'db.create_all()' = Could not connect to localhost server no fe_sendauth: no password supplied (added username and password to env.py)
